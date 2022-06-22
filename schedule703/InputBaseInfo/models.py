@@ -20,8 +20,8 @@ class OrdersMessage(models.Model):
     finish_order_date = models.CharField(max_length=100, verbose_name='收单日期', blank=True, null=True)
     finish_check_date = models.CharField(max_length=100, verbose_name='评审交期', blank=True, null=True)
     importances = models.CharField(max_length=100, verbose_name='优先级', blank=True, null=True)
-    order_state = models.CharField(max_length=100, verbose_name='订单状态', blank=True, null=True)
-    abnormal_orders = models.CharField(max_length=100, verbose_name='异常订单', blank=True, null=True)
+    # order_state = models.CharField(max_length=100, verbose_name='订单状态', blank=True, null=True)
+    # abnormal_orders = models.CharField(max_length=100, verbose_name='异常订单', blank=True, null=True)
     # finished_process = models.CharField(max_length=100, verbose_name='已完成工序',blank=True,null=True)
     def __str__(self):
         return "<订单信息:{}>".format(self.id)
